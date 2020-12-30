@@ -1,3 +1,13 @@
+A codealong to learn React hooks (credit: Colt Steel, The Modern React Bootcamp).
+
+* ToDoApp
+    * ToDoForm
+    * ToDoList
+        * ToDoItem
+
+Each Todo has: id, task, completed
+
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
