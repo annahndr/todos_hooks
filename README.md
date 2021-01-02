@@ -1,5 +1,6 @@
 A codealong to learn React hooks (credit: Colt Steel, The Modern React Bootcamp).
 
+Component Structure:
 * ToDoApp
     * ToDoForm
     * ToDoList

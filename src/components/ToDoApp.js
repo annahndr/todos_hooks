@@ -1,4 +1,6 @@
 import React, { useState } from 'react';
+import ToDoList from "./ToDoList";
+import ToDoForm from "./ToDoForm";
 //material UI stuff:
 import Typography from "@material-ui/core/Typography";
 import Paper from "@material-ui/core/Paper";
@@ -31,8 +33,9 @@ function ToDoApp() {
                 <Toolbar>
                     <Typography color='inherit'>THINGS TO DO (Using Hooks)</Typography>
                 </Toolbar>
-
             </AppBar>
+            <ToDoForm />
+            <ToDoList todos={todos} />
         </Paper>
     )
 }
