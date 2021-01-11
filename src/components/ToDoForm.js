@@ -6,11 +6,12 @@ import Paper from "@material-ui/core/Paper";
 
 function ToDoForm() {
 
-    const [value, handleChange, reset] = useInputState("");
+    const [value, handleValueChange, reset] = useInputState("");
 
     return (
         <Paper>
-            <TextField value={value} onChange={handleChange} />
+            {value}
+            <TextField value={value} onChange={handleValueChange} />
         </Paper>
     )
 }

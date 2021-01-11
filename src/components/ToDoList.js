@@ -17,7 +17,6 @@ function ToDoList({ todos }){
                     </ListItem>
                     <Divider />
                 </>
-                
             ))}
             </List>
         </Paper>
