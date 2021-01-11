@@ -19,6 +19,10 @@ function ToDoApp() {
 
     const [todos, setTodos] = useState(starterTodos);
 
+    const addToDo = newToDoText => {
+        setTodos([...todos, {id: 4, task: newToDoText, completed: false}])
+    }
+
     return(
         <Paper 
             style={{
@@ -34,8 +38,12 @@ function ToDoApp() {
                     <Typography color='inherit'>THINGS TO DO (Using Hooks)</Typography>
                 </Toolbar>
             </AppBar>
-            <ToDoForm />
-            <ToDoList todos={todos} />
+            <Grid container justify='center' style={{ marginTop: "1rem"}}>
+                <Grid item xs={11} md={8} lg={4}>
+                    <ToDoForm addToDo = {addToDo} />
+                    <ToDoList todos={todos} />
+                </Grid>
+            </Grid>
         </Paper>
     )
 }
